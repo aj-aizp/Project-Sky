@@ -36,7 +36,7 @@ public class GunEnemy : MonoBehaviour
 
             canShoot = true; 
 
-            Destroy(bullet,5f); 
+            Destroy(bullet,4f); 
         }
     }
 

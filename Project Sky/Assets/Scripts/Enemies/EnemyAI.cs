@@ -11,7 +11,7 @@ private float amplitude = .0025f;
 
 private float frequency = 3f; 
 
-private float leftBoundary = -15f; 
+private float leftBoundary = -20f; 
 private float newY; 
 
 private Vector3 newVectorX;
