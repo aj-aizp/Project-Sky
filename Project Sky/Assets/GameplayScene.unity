@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 21945612}
   - component: {fileID: 21945611}
   - component: {fileID: 21945610}
+  - component: {fileID: 21945613}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -154,8 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4739283700553815648, guid: d4b4ed9c1b007ba48a8043d93f5fb2f3, type: 3}
-  spawnRate: 0.5
-  bulletSpeed: 7.91
+  spawnRate: 0.29
+  bulletSpeed: 8.36
   rotationSpeed: 10000
   waveFrequency: 1.5
 --- !u!212 &21945611
@@ -218,13 +219,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21945609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 0.46, z: 0}
+  m_LocalPosition: {x: 6.9, y: 0.46, z: 0}
   m_LocalScale: {x: 3.1591, y: 2.7412, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &21945613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21945609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cba7050fcc8a04492bf202f592c9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscillationSpeed: 4.06
 --- !u!1 &146409993
 GameObject:
   m_ObjectHideFlags: 0
