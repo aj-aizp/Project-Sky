@@ -21,7 +21,7 @@ public class ScrollingBackground : MonoBehaviour
 
     void Update() {
 
-        transform.position += Vector3.left *speed * Time.deltaTime; 
+        transform.position += Vector3.left * speed * Time.deltaTime; 
 
         if(transform.position.x < cameraTransform.position.x - length) {
             RepositionBackground(); 
