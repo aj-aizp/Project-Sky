@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,7 +8,9 @@ public class PlayerController : MonoBehaviour
 
 [SerializeField] private float playerSpeed; 
 
-[SerializeField] private Rigidbody2D rb; 
+[SerializeField] private Rigidbody2D rb;  
+
+[SerializeField] private int playerHealth; 
 
 private Vector2 movement; 
 
@@ -27,7 +30,17 @@ private Vector2 movement;
 }
 
 
-
+private void OnTriggerEnter2D(Collider2D other) {
+    
+if(other.GetComponent<EnemyBullet>() != null) {
+    Destroy(other.gameObject); 
+    Damage(); 
+}
+   
+  }
+private void Damage() {
+    playerHealth-= 10; 
+}
 
 
 }
