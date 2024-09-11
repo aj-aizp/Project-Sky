@@ -10,7 +10,9 @@ public class bounceLine : MonoBehaviour
 
         Rigidbody2D rb = other.GetComponent<Rigidbody2D>(); 
 
-        if (rb != null) {
+        EnemyBullet pb = other.GetComponent<EnemyBullet>(); 
+
+        if (rb != null && pb != null) {
             rb.velocity = -rb.velocity; 
         }
   }

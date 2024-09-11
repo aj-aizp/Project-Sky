@@ -1965,8 +1965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6119574634700416287, guid: a5b9fedcf87f82f4f9d409374588c139, type: 3}
-  projectileSpeed: 10
-  fireRate: 0.6
+  projectileSpeed: 18
+  fireRate: 0.1
 --- !u!61 &1819714155
 BoxCollider2D:
   m_ObjectHideFlags: 0
