@@ -10,6 +10,8 @@ public class Gun : MonoBehaviour
    [SerializeField] private float projectileSpeed; 
    [SerializeField] private float fireRate; 
 
+   [SerializeField] private Transform gunpoint; 
+
    private Boolean canShoot = true; 
 
 
@@ -27,7 +29,7 @@ public class Gun : MonoBehaviour
 
             canShoot = false; 
 
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity); 
+            GameObject bullet = Instantiate(bulletPrefab, gunpoint.position, Quaternion.identity); 
 
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>(); 
 
