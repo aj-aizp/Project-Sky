@@ -12,6 +12,8 @@ public class Gun : MonoBehaviour
 
    [SerializeField] private Transform gunpoint; 
 
+    [SerializeField] private Animator anim; 
+
    private Boolean canShoot = true; 
 
 
@@ -20,8 +22,9 @@ public class Gun : MonoBehaviour
 
             //Use Coroutine because it will enable me to control timing of shots
 
-            StartCoroutine(Shoot());  
+            StartCoroutine(Shoot()); 
 
+            
         }
 
 
@@ -34,6 +37,9 @@ public class Gun : MonoBehaviour
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>(); 
 
             rb.velocity = transform.right * projectileSpeed; 
+           
+            anim.Play("shooting");
+
             yield return new WaitForSeconds(fireRate);
 
             canShoot = true; 
