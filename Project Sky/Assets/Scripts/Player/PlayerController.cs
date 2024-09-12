@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 private Vector2 movement; 
 
 
+
  void Update() {
     
     float moveUp = Input.GetAxisRaw("Vertical"); 
@@ -41,6 +42,5 @@ if(other.GetComponent<EnemyBullet>() != null) {
 private void Damage() {
     playerHealth-= 10; 
 }
-
 
 }

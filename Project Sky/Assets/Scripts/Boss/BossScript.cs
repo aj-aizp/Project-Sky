@@ -7,6 +7,8 @@ public class BossScript : MonoBehaviour
     [SerializeField] private int bossHealth; 
 
     [SerializeField] private float oscillationSpeed; 
+
+    [SerializeField] private damageFlash damageFlash; 
  
 
 private void Update() {
@@ -26,6 +28,8 @@ if(other.GetComponent<playerBullet>() != null) {
 
 private void Damage() {
     bossHealth-= 10; 
+
+    damageFlash.CallDamageFlash(); 
 }
 
 }

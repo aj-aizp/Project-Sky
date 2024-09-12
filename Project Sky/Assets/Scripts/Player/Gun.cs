@@ -9,13 +9,10 @@ public class Gun : MonoBehaviour
    [SerializeField] private GameObject bulletPrefab; 
    [SerializeField] private float projectileSpeed; 
    [SerializeField] private float fireRate; 
-
    [SerializeField] private Transform gunpoint; 
-
     [SerializeField] private Animator anim; 
 
    private Boolean canShoot = true; 
-
 
     private void Update() {
         if (Input.GetMouseButton(0) && canShoot ==true) {
@@ -26,7 +23,6 @@ public class Gun : MonoBehaviour
 
             
         }
-
 
         IEnumerator Shoot() {
 
