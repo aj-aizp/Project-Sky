@@ -6,6 +6,9 @@ public class EnemyAI : MonoBehaviour
 {
    
 [SerializeField] private float enemySpeed; 
+[SerializeField] private damageFlash damageFlash; 
+
+[SerializeField] private float enemyHealth; 
 
 private float amplitude = .0025f; 
 
@@ -37,6 +40,23 @@ void FixedUpdate() {
     if(transform.position.x < leftBoundary) {
         Destroy(gameObject); 
     }
+}
+
+
+private void OnTriggerEnter2D(Collider2D other) {
+
+if(other.GetComponent<playerBullet>() != null) {
+    Destroy(other.gameObject); 
+    Damage(); 
+}
+
+}
+
+
+private void Damage() {
+    enemyHealth-= 10; 
+
+    damageFlash.CallDamageFlash(); 
 }
 
 

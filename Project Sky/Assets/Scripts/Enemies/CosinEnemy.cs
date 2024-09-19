@@ -6,6 +6,12 @@ public class CosinEnemy : MonoBehaviour
 {
       
 [SerializeField] private float enemySpeed; 
+ [SerializeField] private damageFlash damageFlash; 
+
+ [SerializeField] private float enemyHealth;  
+
+ [SerializeField] private Rigidbody2D rb; 
+
 
 private float amplitude = .0025f; 
 
@@ -37,6 +43,40 @@ void FixedUpdate() {
     if(transform.position.x < leftBoundary) {
         Destroy(gameObject); 
     }
+}
+
+private void OnTriggerEnter2D(Collider2D other) {
+
+if(other.GetComponent<playerBullet>() != null) {
+    Destroy(other.gameObject); 
+    Damage(); 
+}
+
+}
+
+
+private void Damage() {
+    enemyHealth-= 10; 
+
+    if(enemyHealth <=0) {
+        Death(); 
+    }
+
+    damageFlash.CallDamageFlash(); 
+}
+
+
+private void Death() {
+
+    
+    enabled = false; 
+
+    Vector2 vec2 = new Vector2 (0.0f, 1000.0f); 
+    rb.AddForce(vec2,ForceMode2D.Force);   
+
+    
+
+
 }
 
 
