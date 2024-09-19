@@ -27,6 +27,8 @@ private Vector3 newVectorY;
 void Update() {
 
 
+
+
       newY = transform.position.y + Mathf.Cos(frequency * Time.time) * amplitude;
       newVectorY = new Vector3 (0f, newY,0f) ; 
     
@@ -69,10 +71,9 @@ private void Damage() {
 private void Death() {
 
     
-    enabled = false; 
+   // enabled = false;  
 
-    Vector2 vec2 = new Vector2 (0.0f, 1000.0f); 
-    rb.AddForce(vec2,ForceMode2D.Force);   
+    rb.AddForce(-transform.up * 7f);    
 
     
 

@@ -305,6 +305,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &103910512 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7623751907440493400, guid: 247e07c20c3bc364ba5aafc66895d07a, type: 3}
+  m_PrefabInstance: {fileID: 434928853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146409993
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623751907440493413, guid: 247e07c20c3bc364ba5aafc66895d07a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1274035
+      value: 2.77
       objectReference: {fileID: 0}
     - target: {fileID: 7623751907440493413, guid: 247e07c20c3bc364ba5aafc66895d07a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -717,6 +722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CosEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7623751907440493415, guid: 247e07c20c3bc364ba5aafc66895d07a, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 103910512}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 247e07c20c3bc364ba5aafc66895d07a, type: 3}
 --- !u!1 &587698965
