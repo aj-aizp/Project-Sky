@@ -9,7 +9,7 @@ public class boxExplo : MonoBehaviour
 
     [SerializeField] private GameObject exploFab; 
 
-    public float spawnRate = 1f;
+    public float spawnRate;
 
     private void Update() {
         

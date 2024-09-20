@@ -181,7 +181,7 @@ MonoBehaviour:
   damageFlash: {fileID: -6351419116783787153}
   enemyHealth: 50
   rb: {fileID: 7623751907440493400}
-  downForce: 70
+  downForce: 75
   exploBox: {fileID: 2005351495438001357}
 --- !u!114 &7623751907440493402
 MonoBehaviour:
