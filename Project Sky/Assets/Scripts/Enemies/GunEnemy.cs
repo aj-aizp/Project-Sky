@@ -7,7 +7,7 @@ public class GunEnemy : MonoBehaviour
 {
    [SerializeField] private GameObject bulletPrefab; 
    [SerializeField] private float projectileSpeed; 
-   [SerializeField] private float fireRate; 
+   [SerializeField] private float fireRate;   
 
    private Boolean canShoot = true; 
 
@@ -23,6 +23,7 @@ public class GunEnemy : MonoBehaviour
 
 
         IEnumerator Shoot() {
+
 
             canShoot = false; 
 

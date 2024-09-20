@@ -14,6 +14,8 @@ public class EnemyAI : MonoBehaviour
 
  [SerializeField] private float downForce; 
 
+[SerializeField] private GameObject exploBox; 
+
 private float amplitude = .0025f; 
 
 private float frequency = 3f; 
@@ -61,8 +63,7 @@ private void Damage() {
     enemyHealth-= 10;  
 
      if(enemyHealth <=0) {
-        Death(); 
-        return; 
+        Death();  
     }
 
     Messenger.Broadcast(GameEvent.enemy_hit_score); 
@@ -74,6 +75,8 @@ private void Damage() {
 private void Death() {
 
     Messenger.Broadcast(GameEvent.enemy_down_score); 
+
+    exploBox.SetActive(true);  
 
     rb.AddForce(-transform.up * downForce);    
 }

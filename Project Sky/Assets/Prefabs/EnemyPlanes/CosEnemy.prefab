@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2940429202652376237
 Transform:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bc: {fileID: 3970244569260946148}
   exploFab: {fileID: 870049133605502545, guid: be8a7fed55965cb44abc6b1b554e9797, type: 3}
-  spawnRate: 0.2
+  spawnRate: 2
 --- !u!1 &7623751907440493414
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   enemyHealth: 50
   rb: {fileID: 7623751907440493400}
   downForce: 70
+  exploBox: {fileID: 2005351495438001357}
 --- !u!114 &7623751907440493402
 MonoBehaviour:
   m_ObjectHideFlags: 0

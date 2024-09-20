@@ -14,6 +14,8 @@ public class CosinEnemy : MonoBehaviour
 
  [SerializeField] private float downForce; 
 
+ [SerializeField] private GameObject exploBox; 
+
 private float amplitude = .01f; 
 
 private float frequency = 3f; 
@@ -70,6 +72,8 @@ private void Damage() {
 private void Death() {
 
     Messenger.Broadcast(GameEvent.enemy_down_score); 
+
+    exploBox.SetActive(true);  
 
     rb.AddForce(-transform.up * downForce);    
 }
