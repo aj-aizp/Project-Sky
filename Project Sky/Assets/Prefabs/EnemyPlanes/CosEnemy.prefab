@@ -101,9 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf887de169079b4aa1c6f591e106c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+  enemySpeed: 2
   damageFlash: {fileID: -6351419116783787153}
   enemyHealth: 100
+  rb: {fileID: 7623751907440493400}
+  downForce: 70
 --- !u!114 &7623751907440493402
 MonoBehaviour:
   m_ObjectHideFlags: 0

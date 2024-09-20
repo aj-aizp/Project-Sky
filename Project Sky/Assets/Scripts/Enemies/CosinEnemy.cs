@@ -12,6 +12,7 @@ public class CosinEnemy : MonoBehaviour
 
  [SerializeField] private Rigidbody2D rb; 
 
+ [SerializeField] private float downForce; 
 
 private float amplitude = .0025f; 
 
@@ -25,9 +26,6 @@ private Vector3 newVectorY;
 
 
 void Update() {
-
-
-
 
       newY = transform.position.y + Mathf.Cos(frequency * Time.time) * amplitude;
       newVectorY = new Vector3 (0f, newY,0f) ; 
@@ -53,9 +51,7 @@ if(other.GetComponent<playerBullet>() != null) {
     Destroy(other.gameObject); 
     Damage(); 
 }
-
 }
-
 
 private void Damage() {
     enemyHealth-= 10; 
@@ -69,15 +65,9 @@ private void Damage() {
 
 
 private void Death() {
+   
 
-    
-   // enabled = false;  
-
-    rb.AddForce(-transform.up * 7f);    
-
-    
-
-
+    rb.AddForce(-transform.up * downForce);    
 }
 
 

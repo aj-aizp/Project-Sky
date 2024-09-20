@@ -8,7 +8,11 @@ public class EnemyAI : MonoBehaviour
 [SerializeField] private float enemySpeed; 
 [SerializeField] private damageFlash damageFlash; 
 
-[SerializeField] private float enemyHealth; 
+[SerializeField] private float enemyHealth;
+
+ [SerializeField] private Rigidbody2D rb; 
+
+ [SerializeField] private float downForce; 
 
 private float amplitude = .0025f; 
 
@@ -56,7 +60,18 @@ if(other.GetComponent<playerBullet>() != null) {
 private void Damage() {
     enemyHealth-= 10; 
 
+     if(enemyHealth <=0) {
+        Death(); 
+    }
+
     damageFlash.CallDamageFlash(); 
+}
+
+
+private void Death() {
+  
+
+    rb.AddForce(-transform.up * downForce);    
 }
 
 
