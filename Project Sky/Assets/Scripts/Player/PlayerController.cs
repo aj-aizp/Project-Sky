@@ -41,6 +41,8 @@ if(other.GetComponent<EnemyBullet>() != null) {
   }
 private void Damage() {
     playerHealth-= 10; 
+
+    Messenger.Broadcast("player_health_down"); 
 }
 
 }

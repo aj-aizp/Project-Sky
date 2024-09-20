@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bc: {fileID: 3970244569260946148}
   exploFab: {fileID: 870049133605502545, guid: be8a7fed55965cb44abc6b1b554e9797, type: 3}
-  spawnRate: 2
+  spawnRate: 50
 --- !u!1 &7623751907440493414
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 7623751907440493403}
   - component: {fileID: 7623751907440493400}
   - component: {fileID: -6351419116783787153}
+  - component: {fileID: 5019704382179184965}
   m_Layer: 0
   m_Name: CosEnemy
   m_TagString: Untagged
@@ -258,3 +259,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashTime: 0.15
+--- !u!95 &5019704382179184965
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623751907440493414}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 923a5b25735b8c74fa0a02101241ceac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

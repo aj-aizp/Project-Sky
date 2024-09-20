@@ -1318,6 +1318,7 @@ GameObject:
   - component: {fileID: 1216841155}
   - component: {fileID: 1216841154}
   - component: {fileID: 1216841156}
+  - component: {fileID: 1216841157}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -1366,6 +1367,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1840428206}
+--- !u!114 &1216841157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216841153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb633f2f8404914fafebee13e1fded5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 1544121818}
 --- !u!1 &1236701121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,7 +1857,7 @@ GameObject:
   - component: {fileID: 1544121819}
   - component: {fileID: 1544121818}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1889,7 +1903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Health
+  m_text: '100
 
 '
   m_isRightToLeft: 0

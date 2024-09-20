@@ -279,4 +279,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bc: {fileID: 1164416143469458171}
   exploFab: {fileID: 870049133605502545, guid: be8a7fed55965cb44abc6b1b554e9797, type: 3}
-  spawnRate: 2
+  spawnRate: 50
