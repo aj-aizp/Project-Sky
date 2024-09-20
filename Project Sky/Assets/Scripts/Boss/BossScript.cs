@@ -29,6 +29,8 @@ if(other.GetComponent<playerBullet>() != null) {
 private void Damage() {
     bossHealth-= 10; 
 
+    Messenger.Broadcast(GameEvent.boss_hit_score); 
+
     damageFlash.CallDamageFlash(); 
 }
 

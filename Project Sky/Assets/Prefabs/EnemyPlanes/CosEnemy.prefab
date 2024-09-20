@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf887de169079b4aa1c6f591e106c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 2
+  enemySpeed: 2.5
   damageFlash: {fileID: -6351419116783787153}
-  enemyHealth: 100
+  enemyHealth: 50
   rb: {fileID: 7623751907440493400}
   downForce: 70
 --- !u!114 &7623751907440493402
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4739283700553815648, guid: d4b4ed9c1b007ba48a8043d93f5fb2f3, type: 3}
   projectileSpeed: 5
-  fireRate: 2
+  fireRate: 7
 --- !u!61 &7623751907440493403
 BoxCollider2D:
   m_ObjectHideFlags: 0

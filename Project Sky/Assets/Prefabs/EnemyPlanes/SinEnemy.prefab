@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 2
   damageFlash: {fileID: 6016076690407092313}
-  enemyHealth: 100
+  enemyHealth: 40
   rb: {fileID: 1216390058136388811}
   downForce: 70
 --- !u!114 &1216390058136388813
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4739283700553815648, guid: d4b4ed9c1b007ba48a8043d93f5fb2f3, type: 3}
   projectileSpeed: 5
-  fireRate: 1.5
+  fireRate: 5
 --- !u!61 &1216390058136388810
 BoxCollider2D:
   m_ObjectHideFlags: 0

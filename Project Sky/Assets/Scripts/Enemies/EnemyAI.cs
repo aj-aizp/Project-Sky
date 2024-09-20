@@ -58,18 +58,22 @@ if(other.GetComponent<playerBullet>() != null) {
 
 
 private void Damage() {
-    enemyHealth-= 10; 
+    enemyHealth-= 10;  
 
      if(enemyHealth <=0) {
         Death(); 
+        return; 
     }
+
+    Messenger.Broadcast(GameEvent.enemy_hit_score); 
 
     damageFlash.CallDamageFlash(); 
 }
 
 
 private void Death() {
-  
+
+    Messenger.Broadcast(GameEvent.enemy_down_score); 
 
     rb.AddForce(-transform.up * downForce);    
 }
