@@ -42,7 +42,20 @@ if(other.GetComponent<EnemyBullet>() != null) {
 private void Damage() {
     playerHealth-= 10; 
 
+    Debug.Log(playerHealth); 
+
+    if(playerHealth <= 0) {
+        death(); 
+    }
+
     Messenger.Broadcast("player_health_down"); 
+
+    
+}
+
+private void death () {
+    Time.timeScale = 0; 
+    Destroy(gameObject);
 }
 
 }

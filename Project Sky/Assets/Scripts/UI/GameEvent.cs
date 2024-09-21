@@ -15,6 +15,8 @@ public static class GameEvent
 
      public const string boss_hit_score = "boss_hit_score"; 
 
+     public const string boss_death = "bossDeath"; 
+
 
 
    
