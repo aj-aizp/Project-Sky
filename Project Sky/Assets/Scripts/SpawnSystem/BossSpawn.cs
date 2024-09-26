@@ -43,33 +43,28 @@ public Vector2 getRandomPoint() {
         if (deadBossNum == currentBossNum) {
 
             spawnPlease();
-
-
         }
-
-
     }
 
     private void spawnPlease(){
+
+        int k = 0;  
         
-        for (int i = 0; i <= currentBossNum +1 ; i++) {
+        for (int i = 1; i <= currentBossNum; i++) {
             StartCoroutine(spawnB());  
+            k += 1; 
         }
+
+         currentBossNum += k;   
+
+        Debug.Log(currentBossNum);  
     }
 
     IEnumerator spawnB () {
 
         Instantiate(bossFab, getRandomPoint(), Quaternion.identity); 
 
-
          yield return new WaitForSeconds(100f); 
 
     }
-
-
-
-
-
-
-
 }

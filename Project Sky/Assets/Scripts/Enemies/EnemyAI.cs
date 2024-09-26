@@ -37,8 +37,6 @@ void Update() {
       newVectorX.x = transform.position.x + (-1 * enemySpeed * Time.deltaTime); 
 
     transform.position = newVectorX + newVectorY;  
-
-    Debug.Log(transform.position); 
     }
 
 void FixedUpdate() {

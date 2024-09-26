@@ -37,7 +37,6 @@ void Update() {
 
     transform.position = newVectorX + newVectorY;  
 
-    Debug.Log(transform.position); 
     }
 
 void FixedUpdate() {

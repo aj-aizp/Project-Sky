@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cba7050fcc8a04492bf202f592c9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealth: 500
+  bossHealth: 100
   oscillationSpeed: 1.65
   damageFlash: {fileID: 717236869208662933}
   exploBox: {fileID: 1733548334866001287}

@@ -2060,7 +2060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 300
   rb: {fileID: 1819714150}
-  playerHealth: 100
+  playerHealth: 1000
 --- !u!212 &1819714152
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -49,11 +49,8 @@ private void Damage() {
 
     damageFlash.CallDamageFlash(); 
 
-
      if(bossHealth <=0){
-
-        Death(); 
-        
+        Death();   
     }
 }
 
